@@ -1,8 +1,13 @@
 public class Binarysearch {
     public static void main(String args[]){
-        int arr={1,8,45,56,87};
+        int[] arr={1,8,45,56,87};
         int target=2;
-        search(arr,target);
+        if(search(arr,target)){
+            System.out.println("yes")
+        }
+        else{
+            System.out.println("No")
+        }
     }
     public int search(int[] nums, int target) {
         int start=0;
