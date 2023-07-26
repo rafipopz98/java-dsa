@@ -1,4 +1,9 @@
-class Solution {
+public class Binarysearch {
+    public static void main(String args[]){
+        int arr={1,8,45,56,87};
+        int target=2;
+        search(arr,target);
+    }
     public int search(int[] nums, int target) {
         int start=0;
         int end=nums.length-1;
