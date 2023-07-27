@@ -1,15 +1,15 @@
-public class Binarysearch {
+public class Binaryserach {
     public static void main(String args[]){
         int[] arr={1,8,45,56,87};
         int target=2;
         if(search(arr,target)){
-            System.out.println("yes")
+            System.out.println("yes");
         }
         else{
-            System.out.println("No")
+            System.out.println("No");
         }
     }
-    public int search(int[] nums, int target) {
+    public static int search(int[] nums, int target) {
         int start=0;
         int end=nums.length-1;
         while(start<=end){
