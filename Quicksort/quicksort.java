@@ -30,5 +30,7 @@ public class quicksort{
                     arr[i+1]=arr[end];
                     arr[end]=temp;
                     return(i+1);
+
+                    Math.
     }
 }
