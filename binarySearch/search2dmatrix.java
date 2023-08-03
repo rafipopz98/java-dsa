@@ -1,7 +1,11 @@
 public class search2dmatrix {
     public static void main(String args[]){
         int [] []arr={{1,4},{2,5}};
-        searchMatrix(arr,2);
+        if(searchMatrix(arr,2)){
+            System.out.println("sdfg");
+        }else{
+            System.out.println("noooooooooooooooooo");
+        }
     }
     public static boolean searchMatrix(int[][] matrix, int target) {
         int m=matrix.length;
@@ -12,7 +16,7 @@ public class search2dmatrix {
         int end=m*n-1;
         int linearMid,matrixMid;
         while(start<=end){
-            linearMid=(start+end)/2;
+            linearMid=start+(end-start)/2;
             matrixMid=matrix[linearMid/n][linearMid%n];
             if(target==matrixMid){
                 return true;
